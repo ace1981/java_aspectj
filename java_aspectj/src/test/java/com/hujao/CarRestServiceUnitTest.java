@@ -1,0 +1,24 @@
+package com.hujao;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+ 
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.hujao.rest.CarRestService;
+
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class CarRestServiceUnitTest extends CarRestService {
+
+	@Test
+	public void test() {
+		 this.getAll();
+	}
+
+}
